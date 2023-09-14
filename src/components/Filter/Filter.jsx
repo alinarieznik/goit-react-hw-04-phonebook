@@ -7,9 +7,7 @@ export const Filter = ({ onChangeContacts, filter }) => {
       <StyledInput
         name="filter"
         value={filter}
-        onChange={e => {
-          onChangeContacts(e.currentTarget.value);
-        }}
+        onChange={onChangeContacts}
       ></StyledInput>
     </StyledFilter>
   );
